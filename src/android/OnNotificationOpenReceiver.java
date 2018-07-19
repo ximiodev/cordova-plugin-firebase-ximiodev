@@ -19,7 +19,7 @@ public class OnNotificationOpenReceiver extends BroadcastReceiver {
         Bundle data = intent.getExtras();
         data.putBoolean("tap", true);
 
-        FirebasePlugin.sendNotification(data, context);
+        //~ FirebasePlugin.sendNotification(data, context);
 
         launchIntent.putExtras(data);
         context.startActivity(launchIntent);
