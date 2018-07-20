@@ -70,7 +70,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
         // Not getting messages here? See why this may be: https://goo.gl/39bRNJ
         String title;
         String text;
-        String badgeC;
+        int badgeC;
         String id;
         String sound = null;
         String lights = null;
