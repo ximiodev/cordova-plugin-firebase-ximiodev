@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.preference.PreferenceManager;
+import android.content.SharedPreferences;
 import me.leolin.shortcutbadger.ShortcutBadger;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
