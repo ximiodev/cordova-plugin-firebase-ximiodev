@@ -85,7 +85,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
             title = data.get("title");
             text = data.get("text");
             id = data.get("id");
-            badgeC = data.get("badge");
+            badgeC = Integer.parseInt(data.get("badge"));
             sound = data.get("sound");
             lights = data.get("lights"); //String containing hex ARGB color, miliseconds on, miliseconds off, example: '#FFFF00FF,1000,3000'
 
