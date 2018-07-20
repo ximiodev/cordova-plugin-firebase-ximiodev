@@ -78,10 +78,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
         String lights = null;
         Map<String, String> data = remoteMessage.getData();
         
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-		int count = prefs.getBoolean("count_key", false);
-		count = count + 1;
-		badgeC = count;
+		badgeC = 1;
 
         if (remoteMessage.getNotification() != null) {
             title = remoteMessage.getNotification().getTitle();
