@@ -80,7 +80,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
             title = remoteMessage.getNotification().getTitle();
             text = remoteMessage.getNotification().getBody();
             id = remoteMessage.getMessageId();
-            badgeC = "1";
+            badgeC = 1;
         } else {
             title = data.get("title");
             text = data.get("text");
@@ -115,7 +115,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
 
     }
 
-    private void sendNotification(String id, String title, String messageBody, Map<String, String> data, boolean showNotification, String sound, String lights, String badgeC) {
+    private void sendNotification(String id, String title, String messageBody, Map<String, String> data, boolean showNotification, String sound, String lights, int badgeC) {
         Bundle bundle = new Bundle();
         for (String key : data.keySet()) {
             bundle.putString(key, data.get(key));
