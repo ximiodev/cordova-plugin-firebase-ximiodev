@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import me.leolin.shortcutbadger.ShortcutBadger;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
@@ -75,17 +76,20 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
         String sound = null;
         String lights = null;
         Map<String, String> data = remoteMessage.getData();
+        
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+		int count = prefs.getBoolean("count_key", 0);
+		count = count + 1;
+		badgeC = count;
 
         if (remoteMessage.getNotification() != null) {
             title = remoteMessage.getNotification().getTitle();
             text = remoteMessage.getNotification().getBody();
             id = remoteMessage.getMessageId();
-            badgeC = 1;
         } else {
             title = data.get("title");
             text = data.get("text");
             id = data.get("id");
-            badgeC = Integer.parseInt(data.get("badge"));
             sound = data.get("sound");
             lights = data.get("lights"); //String containing hex ARGB color, miliseconds on, miliseconds off, example: '#FFFF00FF,1000,3000'
 
