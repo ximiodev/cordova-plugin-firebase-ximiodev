@@ -1,39 +1,32 @@
 {
   "project_info": {
-    "project_number": "555883684453",
-    "firebase_url": "https://whereismycar2-c5324.firebaseio.com",
-    "project_id": "whereismycar2-c5324",
-    "storage_bucket": "whereismycar2-c5324.appspot.com"
+    "project_number": "106600278326",
+    "firebase_url": "https://tranqui-b0988.firebaseio.com",
+    "project_id": "tranqui-b0988",
+    "storage_bucket": "tranqui-b0988.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:555883684453:android:65993629958df579",
+        "mobilesdk_app_id": "1:106600278326:android:b676a95142d065ff",
         "android_client_info": {
-          "package_name": "com.sof.whereismycar"
+          "package_name": "com.tranqui.app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "555883684453-84560k9c3lca954cleqs4ma0pl238jkr.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDHlEnb3ZJGhoi5IA67qe-ZmsCWCFJ2lik"
+          "current_key": "AIzaSyBnqQ-5PIaGaQlZyX6jCgKG0BBYgnDy6_k"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106600278326-6pufu6dvvb9tr6u5uork921869tq2nf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
